@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Thomas Neal`,
+    description: `Thinking about things`,
     author: "Thomas Neal",
   },
   plugins: [
@@ -34,5 +35,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
   ],
 }
