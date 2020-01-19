@@ -56,5 +56,7 @@ module.exports = {
         useACF: true,
       },
     },
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
   ],
 }
