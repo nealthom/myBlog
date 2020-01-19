@@ -7,7 +7,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="home" />
-      <h1>My WordPress Blog</h1>
+      <h1>Thinking About Things</h1>
       <h4>Posts</h4>
       {data.allWordpressPost.edges.map(({ node }) => (
         <div>
