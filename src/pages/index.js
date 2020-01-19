@@ -18,7 +18,7 @@ export default ({ data }) => {
           Thinking About Things
         </h1>
 
-        {data.allMarkdownRemark.edges.map(({ node }) => (
+        {data.allWordpressPost.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
               to={node.slug}
