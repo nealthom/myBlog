@@ -15,9 +15,9 @@ export default ({ data }) => {
             border-bottom: 1px solid;
           `}
         >
-          Amazing Pandas Eating Things
+          Thinking About Things
         </h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
