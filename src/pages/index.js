@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 import { css } from "@emotion/core"
 import Layout from "../components/layout"
-import sanitizeHtml from 'sanitize-html'
+import sanitizeHtml from "sanitize-html"
 
 export default ({ data }) => {
   return (
@@ -41,7 +41,7 @@ export default ({ data }) => {
                   — {node.date}
                 </span>
               </h3>
-              <p>{sanitizeHtml(node.excerpt)}</p>
+              <p>{sanitizeHtml(node.excerpt, { allowedTags: [] })}</p>
             </Link>
           </div>
         ))}
