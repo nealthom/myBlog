@@ -47,7 +47,9 @@ export default ({ data }) => {
                   — {node.date}
                 </span>
               </h3>
-              <p>{sanitizeHtml(node.excerpt, { allowedTags: [] })}</p>
+              <p>
+                {sanitizeHtml(node.excerpt.slice(0, 75), { allowedTags: [] })}
+              </p>
             </Link>
           </div>
         ))}
