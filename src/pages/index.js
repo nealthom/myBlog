@@ -6,6 +6,12 @@ import Layout from "../components/layout"
 import sanitizeHtml from "sanitize-html"
 
 export default ({ data }) => {
+  const filterText = str => {
+    return str.replace(/&#(\d+);/g, function(match, dec) {
+      return String.fromCharCode(dec)
+    })
+  }
+
   return (
     <Layout>
       <div>
@@ -32,7 +38,7 @@ export default ({ data }) => {
                   margin-bottom: ${rhythm(1 / 4)};
                 `}
               >
-                {node.title}{" "}
+                {filterText(node.title)}{" "}
                 <span
                   css={css`
                     color: #bbb;
