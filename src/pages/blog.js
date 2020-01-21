@@ -48,7 +48,9 @@ export default ({ data }) => {
                 </span>
               </h3>
               <p>
-                {sanitizeHtml(node.excerpt.slice(0, 75), { allowedTags: [] })}
+                {`${sanitizeHtml(node.excerpt.slice(0, 50), {
+                  allowedTags: [],
+                })}...`}
               </p>
             </Link>
           </div>
