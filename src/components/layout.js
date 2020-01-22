@@ -1,5 +1,6 @@
 import React from "react"
 import { css } from "@emotion/core"
+import { FaTwitter, FaFacebookF, FaGithub } from "react-icons/fa"
 import { useStaticQuery, Link, graphql } from "gatsby"
 
 import { rhythm } from "../utils/typography"
@@ -53,6 +54,15 @@ export default ({ children }) => {
         About
       </Link>
       {children}
+      <a href="http://www.twitter.com/nealthom">
+        <FaTwitter />
+      </a>
+      <a href="http://www.facebook.com/thomas.b.neal">
+        <FaFacebookF />
+      </a>
+      <a href="http://www.github.com/nealthom">
+        <FaGithub />
+      </a>
     </div>
   )
 }
