@@ -8,7 +8,18 @@ export default () => {
   return (
     <Layout>
       <div>
-        <h1>Homepage</h1>
+        <h1>
+          “The original vision was everyone has their own space and made things.
+          Then the silos formed and attracted people because it was easier.” --
+          Aaron Pareki
+        </h1>
+        <p>
+          I am interested in the{" "}
+          <a href="https://boffosocko.com/2017/07/28/an-introduction-to-the-indieweb/">
+            indieweb
+          </a>
+          , this is my place to explore what it has to offer.
+        </p>
       </div>
     </Layout>
   )
